@@ -45,7 +45,7 @@ def floyd_warshall(graph):
         while j != 0:
             j = p[0][j] - 1
             path.append(j+1)
-        print(str(i+1), str(i+1), ":", end ="")
+        print("z 1 do", str(i+1), ": ", end ="")
         for j in range(len(path), 0, -1):
             print(path[j-1], "", end="")
         print("")
@@ -53,7 +53,7 @@ def floyd_warshall(graph):
 
 
 graph = []
-with open("graph05z.txt", 'r') as file:
+with open("graph05bez.txt", 'r') as file:
     a = file.readline().split()
     while(a != []):
         graph.append(a)
