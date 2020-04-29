@@ -53,7 +53,7 @@ def floyd_warshall(graph):
 
 
 graph = []
-with open("graph05bez.txt", 'r') as file:
+with open("graph.txt", 'r') as file:
     a = file.readline().split()
     while(a != []):
         graph.append(a)
