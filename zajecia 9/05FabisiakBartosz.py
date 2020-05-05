@@ -1,12 +1,15 @@
 def hamilton(succ):
     S = [1]
     u = succ[1][0]
+    for i in S:
+        print(i, end=" ")
+    print("")
     while S:
         S.append(u)
         for i in S:
             print(i, end=" ")
         print("")
-        if len(S) == len(succ.keys()):
+        if len(S) == len(succ.keys()) and 1 in succ[S[len(S)-1]]:
             print("CYKL HAMILTONA:", end=" ")
             for i in S:
                 print(i, end=" ")
